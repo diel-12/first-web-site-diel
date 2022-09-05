@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB 1 - HTML</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>HTML이란 무엇인가?</h2>
+  <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the apperance of the document.
+  <img src="coding.jpg" width="100%">
+  </p><p style="margin-top:40px"> HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  </p>
+</body>
+</html>
+
+<ul style="margin-top:150px">
+  <li> 9 밑에 자동 줄바꿈(.)으로 표시되는 것 : view - toggle soft wrap 하면 됨 (Web 1 - 6. Basic syntax : Tags) </li>
+  <li> u, strong과 같이 <>를 쓰는 코드를 <strong>'태그TAG'</strong> 라고 함. <>는 열리는 태그, /는 닫히는 태그 </li>
+  <li> 태그는 감싸여진 것을 '설명'함. 그리고 이게 문법임. </li>
+  <li> br 태그는 열리는/닫히는 태그가 쌍으로 없어도 됨. 줄바꿈이라는 시각적 의미만을 지니기 때문.<br>br 태그는 2,3개를 동시에 쓸 수도 있는데, 이러면 단락이 나누어진 것처럼 보이기도 함.</li>
+  <li> p 태그는 어디서부터 어디까지가 한 단락이라는 걸 나타내기 때문에 닫히는 태그 존재<br> br과 p 태그는 대충 눈으로 볼때는 차이가 없이 똑같은 결과를 내지만, <br>'정보로서 좀 더 가치있는 (여기서 부터 여기까지가 한 단락이다)' HTML 이 되는 것은 p 태그임. br은 그냥 줄바꿈일 뿐.</li>
+  <li> But, p 태그는 단점이 있음. br 태그는 원하는 갯수만큼 사용하여 원하는 만큼 여백의 크기를 조절할 수 있지만, <br>p 태그는 정해진 만큼의 여백이 생기기 때문에 시각적 자유도가 떨어짐</li>
+
+</ul>
+
+<h2> 1. TAG의 종류들 </h2>
+<ol>
+  <li> h1 ~ h6  : 제목 </li>
+  <li> li       : 목록, 목차를 쓸 때 사용하는 태그</li>
+  <li> u        : 밑줄 </li>
+  <li> strong   : 강조 </li>
+  <li> br       : 줄바꿈  (닫히는 태그 없음) </li>
+  <li> p        : 단락 나누기</li>
+  <li> ol       : ordered list. 번호가 매겨진 리스트. ol 안하면 그냥 dot 으로 표시된 리스트가 됨 </li>
+  <li>ul        : unordered list. 이거를 단락 앞뒤에 붙이냐 안붙이냐에 따라 단락의 왼쪽 여백이 생김... 무슨 용도인지는 아직 잘 모르겠다 </li> ul, ol 과 li 태그는 서로 부모자식 태그임!
+  <li> ⭐️ CSS 에서 <strong>태그와 태그 사이의 여백</strong>을 나타내는 코드가 있음. 두번째 태그에 <u>style 이라는 HTML의 속성</u>을 쓰면 됨. <br>그리고 <u>속성의 값은, CSS라는 HTML과 다른 컴퓨터 언어의 문법이 들어오게 약속</u>되어 있음. 위의 예문 단락에서, 두번째 p 태그. <br><strong>margin</strong> 이란 태그와 태그사이의 여백. <strong>top</strong> 은, 두번째 P 태그의 '위쪽'에 여백을 주고 싶은 것이기 때문. <br><strong>40px</strong> 은, 컴퓨터 상에서 사용하는 단위, 40px 만큼의 여백을 주겠다는 뜻.</li>
+
+  <li>p 태그를 통해 어디서부터 어디까지가 한 단락이다, 라는 것을 나타내고,<br> 부족한 부분은 CSS를 통해 훨씬 더 정교하게 제어할 수 있는 것(단락 간 여백의 크기, 여백의 위치 등)</li>
+  <li> title    : 만든 웹 페이지의 제목을 만들어 줌</li>
+  <li> <strong>meta charset="utf-8"</strong> : 문자(character) 세팅(set)을 utf-8로 읽어라, 라는 의미</li> 편집기에서 한글을 썼을 때 결과물에서 한글이 안나오고 이상하게 나온다면, 우리의 편집기는 밑에 보면 UTF-8 이라는 방식으로 저장된거라, 웹 브라우저가 이걸 같은 양식으로 읽게해야 하기 때문임. 따라서 해당 명령어를 코드들의 가장 위에 써주면 그 밑으로의 코드들은 다 utf-8로 읽는 것임
+  <li> meta : 항상 head 요소 안에 들어감. 일반적으로 문자 집합, 페이지 설명, 키워드, 문서 작성자 및 뷰포트 설정을 지정하는데 사용 </li>
+  <li> body : 본문임을 나타내는 태그는 body 태그로 묶기로 '약속'함</li>
+  <li> head : 본문을 설명하는 부분(즉, 제목)은 head 태그로 묶기로 '약속'함</li>
+  <li> html : head와 body 태그를 유일하게 묶을 수 있는 태그</li>
+  <li> !doctype html : 관용적으로, html 태그 위에 사용해 해당 문서가 html 문서라고 선언하는 용도</li>
+  <li> <strong>a</strong>    : Anchor. 정보의 바다에 정박한다는 의미. 이것이 있기때문에 검색엔진이 검색을 할 수 있는 것. '링크'를 표현하는 태그임.<br> a href 에서 href 는 a의 속성. h 는 하이퍼 텍스트, 즉 링크. ref 는 '웹 브라우저야, 이 링크는 기 값을 '참조'해' 하는 것.'<br> ⭐️ 하이퍼텍스트에서 링크를 <u>새 창에서 열기</u>를 하고 싶은 경우 속성에 target = "_blank" 를 추가하면 됨 <br> 이 링크를 클릭하기 전에, 이 링크 위에 마우스 커서를 올려두면 이 링크에 대한 설명이 나타나는 기능<strong>(툴팁)</strong>을 추가하고 싶다? 속성에 title = "html5 specification" 같이 "" 안에 설명을 넣으면 됨.</li>
+
+</ol>
+
+<h2> 2. TAG의 속성 Attribute </h2>
+<ul>
+  <li>img src="coding.jpg" width="100%" 에서, img 뒤에 오는 모든 것들이 속성<br> 위치는 상관이 없음. img width="100%" src="coding.jpg" 여도 됨 (src는 source를 뜻함)</li>
+  <li>태그가 태그의 이름만으로는 정보가 부족할 때 : img 태그만 써서는 어떤 이미지인지 정보가 부족함.<br>속성을 통해 더 많은 의미를 부여할 수 있음</li>
+</ul>
+
+<p style="margin-top:200px">
+<h1>Hello World, This is heading 1</h1>
+<h2>Hello World, This is heading 2</h2>
+<h3>Hello World, This is heading 3</h3>
+<h4>Hello World, This is heading 4</h4>
+<h5>Hello World, This is heading 5</h5>
+<h6>Hello World, This is heading 6</h6>
+
+<strong>Caution : </strong> 헤딩은 li 태그를 하지 않아도 자동 줄바뀜이 되는 것 같음</p>
